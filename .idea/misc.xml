@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/0.ACM模式" />
+      <file path="$PROJECT_DIR$/0.基础代码" />
+      <file path="$PROJECT_DIR$/0.基础代码/排序" />
+      <file path="$PROJECT_DIR$/1.剑指offer" />
+      <file path="$PROJECT_DIR$/1.数组_排序" />
+      <file path="$PROJECT_DIR$/10.图论" />
+      <file path="$PROJECT_DIR$/11.单调栈" />
+      <file path="$PROJECT_DIR$/12.模拟" />
+      <file path="$PROJECT_DIR$/15.CodeTop" />
+      <file path="$PROJECT_DIR$/16.多线程" />
+      <file path="$PROJECT_DIR$/2.链表" />
+      <file path="$PROJECT_DIR$/3.栈和队列" />
+      <file path="$PROJECT_DIR$/4.二叉树" />
+      <file path="$PROJECT_DIR$/5.字符串" />
+      <file path="$PROJECT_DIR$/6.哈希表" />
+      <file path="$PROJECT_DIR$/7.回溯算法" />
+      <file path="$PROJECT_DIR$/8.贪心算法" />
+      <file path="$PROJECT_DIR$/9.动态规划" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$" />
+    </libraryRoots>
+  </component>
+</project>

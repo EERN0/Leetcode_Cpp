@@ -1,0 +1,57 @@
+// Created by caokang on 2023/5/12.
+// https://www.nowcoder.com/exam/test/69329981/detail?pid=27976983#question
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+//int main() {
+//    string str;
+//    vector<string> v;
+//    while (cin >> str) {
+//        v.push_back(str);
+//        if (cin.get() == '\n') {    // 遇到换行符，打印输出
+//            sort(v.begin(), v.end());
+//            for (string &s: v) {
+//                cout << s << " ";
+//            }
+//            cout << endl;
+//            v.clear();
+//        }
+//
+//    }
+//}
+
+// https://www.nowcoder.com/exam/test/69329981/detail?pid=27976983#question
+int main() {
+    string str;
+    vector<string> v;
+    while (cin >> str) {    // str="a,c,bb"
+        // 分离出每个字符串
+        string s = "";
+        for (int i = 0; i < str.size(); ++i) {
+            if (str[i] != ',') {
+                s += str[i];
+            }
+
+            if (str[i] == ',' || i == str.size() - 1) {
+                v.push_back(s);     // 收集字符串
+                s = "";
+            }
+        }
+
+        sort(v.begin(), v.end());
+        for (int i = 0; i < v.size(); ++i) {
+            if (i == v.size()-1) {
+                cout << v[i] << endl;
+            }
+            else {
+                cout << v[i] << ",";
+            }
+        }
+
+        v.clear();  // 清空数组
+    }
+}
