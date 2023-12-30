@@ -43,7 +43,7 @@ public:
                 // 退出while，碰到了'('
                 stOpt.pop();
             }
-            else if ('0' <= s[i] && s[i] <= '9') {  // 处理数字，特别注意处理多为数字
+            else if ('0' <= s[i] && s[i] <= '9') {  // 处理数字，特别注意处理多位数字
                 int start = i;
                 // 处理不止一位的数字，类似12这些多位数字，lc394字符串解码有另一种方式
                 while (i + 1 < s.size() && isdigit(s[i + 1])) {
@@ -70,7 +70,7 @@ public:
 
     // 参数必须用引用的方式，数字和操作符都是操作同一个东西
     void myCalculate(stack<int> &stNums, stack<char> &stOpt) {
-        if (stNums.empty() || stNums.size() < 2) return;
+        if (stNums.empty() || stNums.size() < 2) return;    // 至少两个数参与运算
         if (stOpt.empty()) return;
 
         // 取出数字栈的前两个数
@@ -111,6 +111,8 @@ public:
 int main() {
     string s = "-10 +5 *6 / (3-5) +(-10+5)*2";
     Solution227 solution;
-    int res = solution.calculate(s);
+    int res = solution.calculate("1-(     -2)");
     cout << res << endl;
+
+    // cout << stoi("-10") << endl;
 }

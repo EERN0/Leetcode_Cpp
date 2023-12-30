@@ -21,6 +21,7 @@
       <file path="$PROJECT_DIR$/7.回溯算法" />
       <file path="$PROJECT_DIR$/8.贪心算法" />
       <file path="$PROJECT_DIR$/9.动态规划" />
+      <file path="$PROJECT_DIR$/out" />
     </sourceRoots>
     <libraryRoots>
       <file path="$PROJECT_DIR$" />

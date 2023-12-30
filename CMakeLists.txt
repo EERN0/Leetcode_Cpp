@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.10)  # cmake最低版本
 project(Leetcode)
 set(CMAKE_CXX_STANDARD 11)
 
-
 # 0.基础代码
 #add_executable(Leetcode 0.基础代码/快速排序.cpp)
 #add_executable(Leetcode 0.基础代码/堆排序.cpp)
